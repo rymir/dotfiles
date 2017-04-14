@@ -1,0 +1,13 @@
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.project
+.settings
+erlide
+.rebar
+.tags
+.ruby-version
+.env
+.venv
+.vvenv
+.coveragerc

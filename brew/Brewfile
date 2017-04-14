@@ -1,0 +1,14 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/cask'
+
+brew 'autoenv'
+brew 'bash-completion'
+brew 'colordiff'
+brew 'gawk'
+brew 'htop-osx'
+brew 'jq'
+brew 'pyenv-virtualenv'
+brew 'python3'
+brew 'terraform'
+brew 'wget'

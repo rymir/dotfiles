@@ -1,0 +1,33 @@
+[user]
+    name = Alexej Tessaro
+    email = alexej.tessaro@gmail.com
+    signingkey = C1E9825F
+[core]
+    excludesfile = ~/.gitignore
+[commit]
+    gpgsign = true
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[push]
+    default = simple
+[credential]
+    helper = osxkeychain
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true

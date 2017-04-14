@@ -1,0 +1,12 @@
+source $(brew --prefix)/etc/bash_completion
+source $(brew --prefix git)/etc/bash_completion.d/git-completion.bash
+source $(brew --prefix git)/etc/bash_completion.d/git-prompt.sh
+
+# Set the iTerm tab title to the current directory name
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+fi
+
+# Show "[USER@HOSTNAME (GIT_STATE)]$ "
+export GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='[\u@$(hostname)$(__git_ps1)]\$ '
